@@ -84,6 +84,18 @@ body {
 
 }
 
+.fill-height{
+  display: flex;
+  flex-direction: column;
+}
+
+.fill-height > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .box{
   background: #FFE4E3;
   padding-top: 10px;
@@ -100,4 +112,10 @@ body {
   height: 200px;
   background: #FFE4E3;
   margin: 10px;
+}
+
+.image_box{
+  width: 200px;
+  height: 244px;
+  vertical-align: middle;
 }
