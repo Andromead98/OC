@@ -1,0 +1,134 @@
+/* Importing */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
+/* Text Styles */
+h1{
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+}
+
+h2{
+  font-family: 'Arima Madurai', cursive;
+}
+
+h3{
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+h4{
+  font-family: 'Merriweather', serif;
+}
+
+h5{
+  font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+}
+
+/* Side Navigation */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFE4E3;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 6px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #FE7D79;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #CA6461;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Page Content */
+body {
+  background: #FCC8C7;
+
+}
+
+.fill-height{
+  display: flex;
+  flex-direction: column;
+}
+
+.fill-height > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box{
+  background: #FFE4E3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:90%;
+  height: 320px;
+  border-width: 5px;
+  border-style: inset;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+.box p{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 700px){
+  .box{width:100%;
+  height: 200px;
+  background: #FFE4E3;
+  margin: 10px;
+}
+
+.image_box{
+  width: 200px;
+  height: 244px;
+  vertical-align: middle;
+}

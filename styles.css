@@ -1,5 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
 /*Text Styles */
 h1 {
@@ -13,17 +15,31 @@ h2 {
 
 h3{
   font-family: 'Merriweather', serif;
+  font-size: 20px;
   padding-left: 25px;
+
 }
 
 h4{
   font-family: 'Merriweather', serif;
 }
 
+h5{
+  font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
 p{
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   padding-left: 25px;
   padding-right: 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #2D95F3;
 }
 
 /* Menu css */
@@ -105,6 +121,7 @@ body {
   border-width: 5px;
   border-style: inset;
   margin: 20px auto;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px){
