@@ -1,83 +1,102 @@
-h1 {
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather&display=swap');
 
+/*Text Styles */
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
 }
 
 h2 {
-
+  font-family: 'Merriweather', serif;
 }
 
 h3{
-
+  font-family: 'Merriweather', serif;
 }
 
 h4{
-
+  font-family: 'Merriweather', serif;
 }
 
 p{
-
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 5px;
 }
 
 /* Menu css */
-.theSideNav{
-  height: 100%;
-  width: 0;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFE4E3;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
+  height: 100%;
+  overflow: auto;
 }
 
-.theSideNav a{
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+.sidebar a {
   display: block;
-  transition: 0.3s;
+  color: black;
+  padding: 6px;
+  padding-left: 15px;
+  text-decoration: none;
 }
 
-.theSideNav a:hover{
-  color:#f1f1f1;
+.sidebar a.active {
+  background-color: #FE7D79;
+  color: white;
 }
 
-.theSideNav .closebtn{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.sidebar a:hover:not(.active) {
+  background-color: #CA6461;
+  color: white;
 }
 
-main {
-  transition: margin-left .5s;
-  padding: 20px;
-  background-color: #000;
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
-@media screen and (max-height: 450px){
-  .theSideNav {padding-top: 15px;}
-  .theSideNav a {font-size: 18px;}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/*Page Content */
+body {
+  background: #FCC8C7;
 
 }
 
+.box{
+  background: #FFE4E3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:90%;
+  height: 200px;
+  border-width: 5px;
+  border-style: inset;
+  margin: 20px auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 700px){
+  .box{width:100%;
+  height: 200px;
+  background: #FFE4E3;
+  margin: 10px;
+}
