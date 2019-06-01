@@ -13,6 +13,7 @@ h2 {
 
 h3{
   font-family: 'Merriweather', serif;
+  padding-left: 25px;
 }
 
 h4{
@@ -88,7 +89,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   width:90%;
-  height: 200px;
+  height: 320px;
   border-width: 5px;
   border-style: inset;
   margin: 20px auto;
